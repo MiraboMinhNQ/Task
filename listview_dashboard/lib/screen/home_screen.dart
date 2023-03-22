@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:listview_dashboard/button_screen.dart';
+import 'package:listview_dashboard/screen/button_screen.dart';
 
 import 'dashboard_screen.dart';
-import 'listview.dart';
+import 'listview_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);

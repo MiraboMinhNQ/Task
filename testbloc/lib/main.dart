@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:listview_dashboard/screen/home_screen.dart';
+
+import 'views/timer_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,9 +11,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: TimerScreen(),
     );
   }
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'dashboarditem.dart';
+import '../widgets/dashboarditem.dart';
 
 class DashBoardScreen extends StatelessWidget {
   const DashBoardScreen({Key? key}) : super(key: key);
