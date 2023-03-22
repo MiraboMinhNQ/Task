@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:listview_dashboard/button_screen.dart';
 
 import 'dashboard_screen.dart';
 import 'listview.dart';
@@ -13,6 +14,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
   static const List<Widget> _widgetOptions = <Widget>[
+    ButtonScreen(),
     ListViewScreen(),
     DashBoardScreen()
   ];
@@ -26,10 +28,6 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text("WIDGET UI"),
-      ),
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
@@ -37,6 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Options"),
           BottomNavigationBarItem(icon: Icon(Icons.list), label: "ListView"),
           BottomNavigationBarItem(icon: Icon(Icons.dashboard), label: "DashBoard"),
         ],
